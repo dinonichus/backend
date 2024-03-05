@@ -6,11 +6,11 @@
     <title>VOGUE Avenue</title>
 
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 
     <script src="https://kit.fontawesome.com/8f441d49ca.js" crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </head>
 <body>
     
@@ -18,45 +18,49 @@
     <section id="header">
         <a href="#" class="logo"><span>VOGUE</span> Avenue</a>
 
-        <!-- navbar -->
         <div>
-            <ul id="navbar"> 
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li id="home-bag"><a href="cart.html"><i class="fas fa-cart-shopping"></i></a></li>
+            <ul id="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="active" href="../shop.html">Shop</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li id="home-bag"><a href="../cart.html"><i class="fas fa-cart-shopping"></i></a></li>
                 <a href="#" id="close"><i class="far fa-solid fa-xmark"></i></a>
             </ul>
         </div>
 
-        <!-- tampilan navbar untuk mobile -->
         <div id="mobile">
-            <a href="cart.html"><i class="fas fa-cart-shopping"></i></a>
+            <a href="../cart.html"><i class="fas fa-cart-shopping"></i></a>
             <i id="bar" class="fas fa-bars"></i>
 
             
         </div>
     </section>
 
-    <!-- Home -->
-    <section id="hero">
-        <h4>Hello! We're</h4>
-        <h1><span>VOGUE</span> Avenue</h1>
-        <p>Discover Your Signature Look</p>
-        <a href="#product1"><button>Shop now</button></a>
+    <!-- page header -->
+    <section id="page-header" class="shop-header">
     </section>
 
-    <!-- New Release -->
+    <!-- category -->
+    <section id="category">
+        <div id="category-btn">
+            <button onclick="window.location.href='../shop.html';">All</button>
+            <button onclick="window.location.href='women.html';">Women</button>
+            <button onclick="window.location.href='men.html';">Men</button>
+            <button class="active" onclick="window.location.href='shirts.html';">Shirts</button>
+            <button onclick="window.location.href='pants.html';">Pants</button>
+            <button onclick="window.location.href='kids.html';">Kids</button>
+        </div>
+    </section>
+
+    <!-- Products -->
     <section id="product1" class="section-p1">
-        <h2><span>New</span> Released</h2>
-        <p>Dress Your Best, Feel Your Best!</p>
 
         <div class="product-container">
-            <div class="product" onclick="window.location.href='../product_details/whitedress.html';">
-                <img src="../assets/img/woman/dressputih.jpg" alt="">
+            <div class="product" onclick="window.location.href='../product_details/kemejakotak.html';">
+                <img src="../assets/img/man/kemejakotak.jpg" alt="">
                 <div class="description">
-                    <h4>White Short Dress</h4>
+                    <h4>Fit Shirt in Soft Cotton Flannel </h4>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -64,7 +68,73 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4 class="price">IDR 400.000</h4>
+                    <h4 class="price">IDR 490.000</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-cart-plus"></i></a>
+            </div>
+
+            <div class="product" onclick="window.location.href='../product_details/weave.html';">
+                <img src="../assets/img/man/kemejaresort.jpg" alt="">
+                <div class="description">
+                    <h4>Shirt in a Patterned viscose Weave </h4>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="price">IDR 550.000</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-cart-plus"></i></a>
+            </div>
+
+            <div class="product" onclick="window.location.href='../product_details/fited.html';">
+                <img src="../assets/img/shirt/FITTEDSHIRT.jpg" alt="">
+                <div class="description">
+                    <h4>Fitted Shirt</h4>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="price">IDR 190.000</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-cart-plus"></i></a>
+            </div>
+
+            <div class="product" onclick="window.location.href='../product_details/tappered.html';">
+                <img src="../assets/img/shirt/TAPPEREDSHIRT.jpg" alt="">
+                <div class="description">
+                    <h4>Tappered Shirt</h4>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="price">IDR 340.000</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-cart-plus"></i></a>
+            </div>
+
+
+
+            <div class="product" onclick="window.location.href='../product_details/linen.html';">
+                <img src="../assets/img/shirt/OVERSIZEDLINENSHIRT.jpg" alt="">
+                <div class="description">
+                    <h4>Oversized Linen Shirt</h4>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="price">IDR 250.000</h4>
                 </div>
                 <a href="#" class="cart"><i class="fas fa-cart-plus"></i></a>
             </div>
@@ -84,127 +154,6 @@
                 </div>
                 <a href="#" class="cart"><i class="fas fa-cart-plus"></i></a>
             </div>
-
-            <div class="product" onclick="window.location.href='../product_details/runningtrousers.html';">
-                <img src="../assets/img/pants/runningtrousers.jpg" alt="">
-                <div class="description">
-                    <p>Running Trousers</p>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4 class="price">IDR 610.000</h4>
-                </div>
-                <a href="#" class="cart"><i class="fas fa-cart-plus"></i></a>
-            </div>
-
-            <div class="product" onclick="window.location.href='../product_details/plain.html';">
-                <img src="../assets/img/man/relaxed tshirt.jpg" alt="">
-                <div class="description">
-                    <h4>Plain Tshirt</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4 class="price">IDR 180.000</h4>
-                </div>
-                <a href="#" class="cart"><i class="fas fa-cart-plus"></i></a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Best Seller -->
-    <section id="product1" class="section-p1">
-        <h2><span>Best</span> Sellers</h2>
-        <p>What people are looking for!</p>
-
-        <div class="product-container">
-            <div class="product" onclick="window.location.href='../product_details/tappered.html';">
-                <img src="../assets/img/shirt/TAPPEREDSHIRT.jpg" alt="">
-                <div class="description">
-                    <h4>Tappered Shirt</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4 class="price">IDR 340.000</h4>
-                </div>
-                <a href="#" class="cart"><i class="fas fa-cart-plus"></i></a>
-            </div>
-
-            <div class="product" onclick="window.location.href='../product_details/sleeveless.html';">
-                <img src="../assets/img/woman/sleeveless dress.jpg" alt="">
-                <div class="description">
-                    <h4>White Sleeveless Dress</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4 class="price">IDR 200.000</h4>
-                </div>
-                <a href="#" class="cart"><i class="fas fa-cart-plus"></i></a>
-            </div>
-
-            <div class="product" onclick="window.location.href='../product_details/plain.html';">
-                <img src="../assets/img/man/relaxed tshirt.jpg" alt="">
-                <div class="description">
-                    <h4>Plain Tshirt</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4 class="price">IDR 180.000</h4>
-                </div>
-                <a href="#" class="cart"><i class="fas fa-cart-plus"></i></a>
-            </div>
-
-            <div class="product" onclick="window.location.href='../product_details/reversibletrackpants.html';">
-                <img src="../assets/img/pants/reversibletrackpants.jpg" alt="">
-                <div class="description">
-                    <p>Reversible Track Pants</p>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4 class="price">IDR 550.000</h4>
-                </div>
-                <a href="#" class="cart"><i class="fas fa-cart-plus"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="sm-banner" class="section-p1">
-        <div class="banner-box ">
-            <h4>Where Styles</h4>
-            <h2>Meet Convenience</h2>
-            <p>Your Fashion Destination, Anytime, Anywhere</p>
-            <a href="shop.html"><button>Take A Look</button></a>
-        </div>
-
-        <div class="banner-box-right">
-            <h4>Dress Your Best,</h4>
-            <h2>Feel Your Best</h2>
-            <p>Inspire. Express. Empower.</p>
-            <a href="shop.html"><button>Grab Yours</button></a>
         </div>
     </section>
 
@@ -247,7 +196,7 @@
 
         <div class="col">
             <h4>Secured Payment Gateways</h4>
-            <img src="assets/img/payment.png" alt="">
+            <img src="../assets/img/payment.png" alt="">
         </div>
 
         <div class="copyright">
